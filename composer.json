@@ -1,0 +1,17 @@
+{
+    "name": "dufuna/slim-api",
+    "description": "A simple Slim API",
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "DB\\": "database",
+            "App\\Controller\\": "app/controllers"
+        }
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public"
+    }
+}
