@@ -8,10 +8,12 @@ class ComposerStaticInit87e352a393f6ddea6b150059197922e5
 {
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
+        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -20,6 +22,8 @@ class ComposerStaticInit87e352a393f6ddea6b150059197922e5
             'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Symfony\\Contracts\\Translation\\' => 30,
+            'Symfony\\Component\\Translation\\' => 30,
             'Slim\\Psr7\\' => 10,
             'Slim\\' => 5,
         ),
@@ -30,6 +34,13 @@ class ComposerStaticInit87e352a393f6ddea6b150059197922e5
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
             'PhpOption\\' => 10,
+        ),
+        'I' => 
+        array (
+            'Illuminate\\Support\\' => 19,
+            'Illuminate\\Database\\' => 20,
+            'Illuminate\\Contracts\\' => 21,
+            'Illuminate\\Container\\' => 21,
         ),
         'G' => 
         array (
@@ -43,6 +54,8 @@ class ComposerStaticInit87e352a393f6ddea6b150059197922e5
         'D' => 
         array (
             'Dotenv\\' => 7,
+            'Doctrine\\Inflector\\' => 19,
+            'Doctrine\\Common\\Inflector\\' => 26,
             'DB\\' => 3,
         ),
         'A' => 
@@ -65,6 +78,14 @@ class ComposerStaticInit87e352a393f6ddea6b150059197922e5
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
+        'Symfony\\Contracts\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation-contracts',
+        ),
+        'Symfony\\Component\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation',
         ),
         'Slim\\Psr7\\' => 
         array (
@@ -96,6 +117,22 @@ class ComposerStaticInit87e352a393f6ddea6b150059197922e5
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
         ),
+        'Illuminate\\Support\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/support',
+        ),
+        'Illuminate\\Database\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/database',
+        ),
+        'Illuminate\\Contracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/contracts',
+        ),
+        'Illuminate\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/container',
+        ),
         'GrahamCampbell\\ResultType\\' => 
         array (
             0 => __DIR__ . '/..' . '/graham-campbell/result-type/src',
@@ -111,6 +148,14 @@ class ComposerStaticInit87e352a393f6ddea6b150059197922e5
         'Dotenv\\' => 
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
+        ),
+        'Doctrine\\Inflector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
+        ),
+        'Doctrine\\Common\\Inflector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
         ),
         'DB\\' => 
         array (
@@ -130,6 +175,20 @@ class ComposerStaticInit87e352a393f6ddea6b150059197922e5
         ),
     );
 
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/..' . '/nesbot/carbon/src',
+    );
+
+    public static $prefixesPsr0 = array (
+        'U' => 
+        array (
+            'UpdateHelper\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/kylekatarnls/update-helper/src',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
@@ -144,6 +203,8 @@ class ComposerStaticInit87e352a393f6ddea6b150059197922e5
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit87e352a393f6ddea6b150059197922e5::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit87e352a393f6ddea6b150059197922e5::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit87e352a393f6ddea6b150059197922e5::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit87e352a393f6ddea6b150059197922e5::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit87e352a393f6ddea6b150059197922e5::$classMap;
 
         }, null, ClassLoader::class);

@@ -4,7 +4,8 @@
     "require": {
         "slim/slim": "4.*",
         "slim/psr7": "^1.6",
-        "vlucas/phpdotenv": "^5.5"
+        "vlucas/phpdotenv": "^5.5",
+        "illuminate/database": "^5.4"
     },
     "autoload": {
         "psr-4": {
@@ -16,5 +17,10 @@
     },
     "scripts": {
         "start": "php -S localhost:8080 -t public"
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
     }
 }
