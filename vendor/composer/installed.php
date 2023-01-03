@@ -3,7 +3,7 @@
         'name' => 'dufuna/slim-api',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '856dc1e8e5742dfa5df4de8c2b700a7e21e23795',
+        'reference' => '3bcdc8f681230b6ca4180648c963c87fcd411254',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'dufuna/slim-api' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '856dc1e8e5742dfa5df4de8c2b700a7e21e23795',
+            'reference' => '3bcdc8f681230b6ca4180648c963c87fcd411254',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
