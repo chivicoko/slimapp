@@ -5,14 +5,15 @@
         "slim/slim": "4.*",
         "slim/psr7": "^1.6",
         "vlucas/phpdotenv": "^5.5",
-        "illuminate/database": "^5.4"
+        "illuminate/database": "^5.8"
     },
     "autoload": {
         "psr-4": {
             "DB\\": "database",
             "App\\Controller\\": "app/controllers",
             "App\\Constants\\": "app/constants",
-            "App\\Middleware\\": "app/middlewares"
+            "App\\Middleware\\": "app/middlewares",
+            "App\\Model\\": "app/models"
         }
     },
     "scripts": {
@@ -22,5 +23,8 @@
         "allow-plugins": {
             "kylekatarnls/update-helper": true
         }
+    },
+    "require-dev": {
+        "composer/composer": "^2.5"
     }
 }
